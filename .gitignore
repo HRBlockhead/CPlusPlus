@@ -4,3 +4,5 @@
 # Compiled Object files
 *.slo
 *.lo
+*.exe
+settings.json
