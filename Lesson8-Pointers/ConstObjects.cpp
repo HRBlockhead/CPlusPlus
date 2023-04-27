@@ -29,22 +29,22 @@ Rectangle::~Rectangle()
 
 int main()
 {
-    Rectangle* p_rect = new Rectangle;
-    const Rectangle * p_constRect = new Rectangle;
-    Rectangle * const p_constPtr = new Rectangle;
+    Rectangle* pRect = new Rectangle;
+    const Rectangle * pConstRect = new Rectangle;
+    Rectangle * const pConstPtr = new Rectangle;
 
-    std::cout << "p_rect width: " << p_rect->getWidth() << " feet\n";
-    std::cout << "p_constRect width: " << p_constRect->getWidth() << " feet\n";
-    std::cout << "p_constPtr width: " << p_constPtr->getWidth() << " feet\n";
+    std::cout << "pRect width: " << pRect->getWidth() << " feet\n";
+    std::cout << "pConstRect width: " << pConstRect->getWidth() << " feet\n";
+    std::cout << "pConstPtr width: " << pConstPtr->getWidth() << " feet\n";
 
-    p_rect->setWidth(10);
+    pRect->setWidth(10);
     // The next line is a compiler error. A const Rectangle can only call const methods
     // p_constRect->setLength(10);
-    p_constPtr->setWidth(10);
+    pConstPtr->setWidth(10);
 
-    std::cout << "p_rect width: " << p_rect->getWidth() << " feet\n";
-    std::cout << "p_constRect width: " << p_constRect->getWidth() << " feet\n";
-    std::cout << "p_constPtr width: " << p_constPtr->getWidth() << " feet\n";
+    std::cout << "pRect width: " << pRect->getWidth() << " feet\n";
+    std::cout << "pConstRect width: " << pConstRect->getWidth() << " feet\n";
+    std::cout << "pConstPtr width: " << pConstPtr->getWidth() << " feet\n";
 
     return 0;
 }

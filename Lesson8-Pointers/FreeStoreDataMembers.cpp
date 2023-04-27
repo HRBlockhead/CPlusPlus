@@ -20,16 +20,19 @@ SimpleCat::SimpleCat( int age )
     this->age = age;
 }
 
+SimpleCat::~SimpleCat()
+{}
+
 int main()
 {
-    SimpleCat * frisky = new SimpleCat(2);
+    SimpleCat* frisky = new SimpleCat(2);
 
     
-    std::cout << "SimpleCat Rags_p = new SimpleCat..." << std::endl;
-    SimpleCat* Rags_p = new SimpleCat;
+    std::cout << "SimpleCat pRags = new SimpleCat..." << std::endl;
+    SimpleCat* pRags = new SimpleCat;
 
-    std::cout << "delete Rags_p..." << std::endl;
-    delete Rags_p;
+    std::cout << "delete pRags..." << std::endl;
+    delete pRags;
 
     std::cout << "Exiting, watch Frisky go..." << std::endl;
 }

@@ -27,11 +27,11 @@ int main()
     std::cout << "SimpleCat Frisky..." << std::endl;
     SimpleCat Frisky;
     
-    std::cout << "SimpleCat Rags_p = new SimpleCat..." << std::endl;
-    SimpleCat* Rags_p = new SimpleCat;
+    std::cout << "SimpleCat pRags = new SimpleCat..." << std::endl;
+    SimpleCat* pRags = new SimpleCat;
 
-    std::cout << "delete Rags_p..." << std::endl;
-    delete Rags_p;
+    std::cout << "delete pRags..." << std::endl;
+    delete pRags;
 
     std::cout << "Exiting, watch Frisky go..." << std::endl;
 }

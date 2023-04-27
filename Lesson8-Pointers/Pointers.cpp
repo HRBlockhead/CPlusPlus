@@ -3,7 +3,7 @@
 int main()
 {
     unsigned short int myAge = 5, yourAge = 10;
-    unsigned short int * age_p = &myAge;
+    unsigned short int* age_p = &myAge;
 
     std::cout << "myAge:\t" << myAge << "\tyourAge:\t" << yourAge << std::endl;
     std::cout << "&myAge:\t" << &myAge << "\t&yourAge:\t" << &yourAge << std::endl;
